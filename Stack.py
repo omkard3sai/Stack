@@ -36,4 +36,4 @@ class Stack:
             return False
 
     def print(self):
-        print('Bottom ->', ','.join(str(a) for a in self.stack))
+        print('->', ','.join(str(a) for a in reversed(self.stack)))
