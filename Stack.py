@@ -5,20 +5,20 @@ class Stack:
         self.size = size
 
     def push(self, item=20):
-        if len(self.stack) < self.size:
+        if not self.isfullstatus():
             self.stack.append(item)
             return True
         else:
             return False
 
     def pop(self):
-        if self.stack:
+        if not self.isemptystatus():
             return self.stack.pop()
         else:
             return False
 
     def peek(self):
-        if self.stack:
+        if not self.isemptystatus():
             return self.stack[-1]
         else:
             return False
